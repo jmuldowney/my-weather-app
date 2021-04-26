@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/476f2a295c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+<h1> 
+Hello, Beautiful! 
+</h1>
+
+
+
+<div class="row">
+  <div class="col">
+
+    <h2 id="date">
+    
+    <br/>
+    
+    </h2>
+
+    <h3 id="time">
+    
+    </h3>
+
+<p class="current-weather">
+  <em>Rainy Day</em>
+</p>
+</div>
+
+
+
+<div class="col  today">
+  <form id=search-city-form>
+    <input 
+    class="city-state-country"
+    type="search"
+    placeholder="Type a city.."
+    id="enter-city"
+    >
+    <input 
+    class="enter-button"
+    type="submit" 
+    value="Search">
+  </form>
+  <button type="button" class="btn btn-warning" id="current-location-button"><i class="fas fa-map-marker-alt"></i></button>
+
+  <div class="weather-circle">
+    <p>
+ <span 
+ class="temp"
+ id= "current-temperature">
+ 
+ </span>
+<sup>
+<span>
+    <a href="#" id="fahrenheit"> </a><a href="#" id="celsius"></a>
+ </p>
+</span>
+</sup>
+
+    <p class="high-low-temp">
+    47°/22°
+    </p>
+    <p class="current-city" id="city">
+      
+    </p>
+  </div>
+</div>
+
+
+
+  <div class="col looking-ahead ">
+    Looking ahead...
+    
+    <div class="row">
+      <div class="col">
+        
+        <div class="small-weather-circle">
+    
+          <ul>
+            <li class="day">
+              F
+            </li>
+            <li>
+              55°
+            </li>
+            <li>
+              <span>37°</span>
+            </li>
+            <li>
+              <i class="fas fa-cloud-sun weather-emoji"></i>
+            </li>
+          </ul>
+    
+        </div>
+
+        <div class="small-weather-circle">
+        <ul>
+          <li class="day">
+            Su
+          </li>
+          <li >
+            55°
+          </li>
+          <li >
+            <span>37°</span>
+          </li>
+          <li>
+            <i class="fas fa-cloud-sun weather-emoji"></i>
+          </li>
+        </ul>
+        </div>
+
+        <div class="small-weather-circle">
+        <ul>
+          <li class="day">
+            Tu
+          </li>
+          <li>
+            55°
+          </li>
+          <li>
+            <span>24°</span>
+          </li>
+          <li>
+            <i class="fas fa-sun weather-emoji"></i>
+          </li>
+        </ul>
+        </div>
+
+        <div class="small-weather-circle">
+        <ul>
+          <li class="day">
+            Th
+          </li>
+          <li>
+            37°
+          </li>
+          <li>
+            <span>22°</span>
+          </li>
+          <li>
+            <i class="fas fa-cloud-rain weather-emoji"></i>
+          </li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="small-weather-circle">
+        <ul>
+          <li class="day">
+            S
+          </li>
+          <li>
+            42°
+          </li>
+          <li>
+            <span>22°</span>
+          </li>
+          <li>
+            <i class="fas fa-cloud-rain weather-emoji"></i>
+          </li>
+        </ul>
+        </div>
+        
+        <div class="small-weather-circle">
+        <ul>
+          <li class="day">
+            M
+          </li>
+          <li>
+            43°
+          </li>
+          <li>
+            <span>25°</span>
+          </li>
+          <li>
+            <i class="fas fa-sun weather-emoji"></i>
+          </li>
+        </ul>
+        </div>
+
+        <div class="small-weather-circle">
+        <ul>
+          <li class="day">
+            W
+          </li>
+          <li>
+            55°
+          </li>
+          <li>
+            <span>27°</span>
+          </li>
+          <li>  
+          <i class="fas fa-cloud-sun weather-emoji"></i>
+          </li>
+        </ul>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+</div>
+    </div>
+
+
+
+
+    
+<script src="src/index.js"></script>
+</body>
+</html>
