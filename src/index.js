@@ -85,9 +85,11 @@ function showCurrentTemperature(response) {
     "#current-temperature"
   );
   let currentCity = response.data.name;
+  let currentCountry = response.data.sys.country;
   let currentCityElement = document.querySelector("#city");
   currentTemperatureElement.innerHTML = `${currentTemperature}°C`;
   currentCityElement.innerHTML = currentCity;
+  console.log(response);
   document.querySelector("#high-temp").innerHTML = `${Math.round(
     response.data.main.temp_max
   )}°/`;
@@ -97,6 +99,9 @@ function showCurrentTemperature(response) {
   document.querySelector(
     "#description"
   ).innerHTML = `${response.data.weather[0].description.toUpperCase()}`;
+  document.querySelector("#feels-like").innerHTML = `Feels like...${Math.round(
+    response.data.main.feels_like
+  )}°`;
 }
 
 function displayCurrentWeather(event) {

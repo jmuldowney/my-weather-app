@@ -40,6 +40,11 @@ footer {
   background-color: #7b113a;
   max-width: 1000px;
 }
+.feels-like {
+  text-align: center;
+  color: #150e56;
+  font-weight: 900;
+}
 .current-weather {
   text-align: center;
   color: #150e56;
